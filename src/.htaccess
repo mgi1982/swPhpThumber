@@ -1,0 +1,9 @@
+Options +FollowSymLinks
+RewriteEngine on
+
+RewriteCond %{QUERY_STRING} w=(.*)
+RewriteRule (.*)\.(gif|jpg|png)$ /swPhpThumber.php?img=$1.$2&w=$3 [R,L]
+RewriteCond %{QUERY_STRING} h=(.*)
+RewriteRule (.*)\.(gif|jpg|png)$ /swPhpThumber.php?img=$1.$2 [R,L]
+RewriteCond %{QUERY_STRING} scale=(.*)
+RewriteRule (.*)\.(gif|jpg|png)$ /swPhpThumber.php?img=$1.$2 [R,L]
