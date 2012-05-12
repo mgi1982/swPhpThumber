@@ -2,3 +2,6 @@ src/*.jpg
 src/*.jpeg
 src/*.png
 src/*.gif
+src/.buildpath
+src/.project
+src/.settings
