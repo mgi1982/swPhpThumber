@@ -28,10 +28,13 @@ scaling will be applied.
 
 
 Some features that will be added in the future:
+
 1. Support of Gearman, further improving your ability to detach and enqueue
 your thumb generation process.
+
 2. Caching configuration via url/local files, this will allow you to indicate
 wether you want to force the thumb regeneration or if you are ok with getting
 a new version of the image.
+
 3. Inline image generation to embed the image directly into css/html files
 reducing the ammount of requests.
