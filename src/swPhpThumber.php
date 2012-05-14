@@ -1,9 +1,10 @@
 <?php
-$im = file_get_contents($_REQUEST['img']);
 if(!file_exists($_REQUEST['img'])) {
     header($_SERVER["SERVER_PROTOCOL"]." 404 Not Found");
     exit();
 }
+
+$im = file_get_contents($_REQUEST['img']);
 
 class swPhpThumber {
     private $_image;
